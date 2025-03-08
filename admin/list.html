@@ -322,7 +322,7 @@
           var thumbnailContainer = document.createElement("div");
           thumbnailContainer.className = "thumbnail-container";
           var thumbnailImg = document.createElement("img");
-          thumbnailImg.src = blog.thumbnail; // ブログオブジェクトがサムネイルのURLを持っていると仮定します
+          thumbnailImg.src = blog.thumbnail;
           thumbnailImg.alt = "Thumbnail";
           thumbnailImg.className = "blog-thumbnail";
           thumbnailContainer.appendChild(thumbnailImg);
@@ -358,7 +358,7 @@
           actionCell.appendChild(toggleButton);
 
           var editCell = row.insertCell(4);
-          editCell.className = "edit-cell"; // 編集セルに狭いセル用のクラスを追加
+          editCell.className = "edit-cell";
           var editButton = document.createElement("button");
           editButton.innerText = "編集";
           editButton.addEventListener(
@@ -372,7 +372,7 @@
           editCell.appendChild(editButton);
 
           var deleteCell = row.insertCell(5);
-          deleteCell.className = "delete-cell"; // 削除セルに狭いセル用のクラスを追加
+          deleteCell.className = "delete-cell";
           var deleteButton = document.createElement("button");
           deleteButton.innerText = "削除";
           deleteButton.className = "delete-button";
